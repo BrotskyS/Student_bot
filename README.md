@@ -32,10 +32,10 @@ If Android Studio report `Unsupported Modules Detected` or don't found modules
 3. Install [brew](https://brew.sh/index_ru) `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
 4. Install yarn `brew install yarn`
 5. Install watchman `brew install watchman`
-6. Instal adb `brew cask install android-platform-tools`
+6. Install adb `brew cask install android-platform-tools`
 7. Install java v8 `brew cask install adoptopenjdk/openjdk/adoptopenjdk8`
 8. Open Android Studio open Appearance & Behavior → System Settings → Android SDK. Select: Android SDK Platform 29, Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
-9. Open file `$HOME/.bash_profile` and past this code 
+9. Open file `$HOME/.bash_profile` and past this code:
 
 		export ANDROID_HOME=$HOME/Library/Android/sdk
 		export PATH=$PATH:$ANDROID_HOME/emulator
