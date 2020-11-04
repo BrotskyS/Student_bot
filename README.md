@@ -36,11 +36,11 @@ If Android Studio report `Unsupported Modules Detected` or don't found modules
 7. Install java v8 `brew cask install adoptopenjdk/openjdk/adoptopenjdk8`
 8. Open Android Studio open Appearance & Behavior → System Settings → Android SDK. Select: Android SDK Platform 29, Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
 9. Open file `$HOME/.bash_profile` and past this code 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+		export ANDROID_HOME=$HOME/Library/Android/sdk
+		export PATH=$PATH:$ANDROID_HOME/emulator
+		export PATH=$PATH:$ANDROID_HOME/tools
+		export PATH=$PATH:$ANDROID_HOME/tools/bin
+		export PATH=$PATH:$ANDROID_HOME/platform-tools
 10. Run `Android Studio` and open `./android` folder. Studio will sync and download all dependencies.
 11. Run `yarn start` to start the server to deliver the bundle url. Make sure this is running before you start your application.
 12. Into the other terminal run `yarn android` to start app.
